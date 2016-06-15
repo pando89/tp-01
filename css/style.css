@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 
 /* selector universal */
 *{
@@ -63,6 +63,10 @@ figure{
 	float: left;
 }
 
+.logo figcaption{
+	display: none;
+}
+
 .main-nav{
 	float: right;
 }
@@ -70,7 +74,12 @@ figure{
 /* selector descendiente */
 .main-nav li{
 	float: left;
-	margin: 8px 0 0 15px;
+	margin: 5px 0 0 15px;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: #222;
 }
 
 .cleaner{
@@ -102,13 +111,14 @@ figure{
 .register{
 	background-color: #06B4F2;
 	position: relative;
-	top: 30px;	
+	top: 30px;
 }
 
 .register input{
 	width: 1000px;
 	height: 60px;
 	font-size: 16px;
+	padding: 0 15px;
 	font-family: inherit;
 }
 
@@ -122,17 +132,32 @@ figure{
 	font-size: 16px;
 }
 
-
 .producto{
-	border: dashed 1px green;
 	width: 300px;
 	text-align: center;
 	float: left;
 	margin-top: 100px;
+	padding: 0 15px;
+}
+
+.producto h4{
+	text-transform: uppercase;
+}
+
+.title-services{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.title-services + p{
+	text-align: center;
+	margin: 0 0 100px;
+	font-size: 16px;
 }
 
 .left-services{
-	background-color: red;
 	width: 400px;
 	float: left;
 }
@@ -141,7 +166,6 @@ figure{
 	position: relative;
 	text-align: right;
 	padding-right: 60px;
-	background: pink;
 	margin-bottom: 10px;
 }
 
@@ -163,14 +187,11 @@ figure{
 
 .cellphone{
 	width: 400px;
-	background:yellow;
 	text-align: center;
 	float: left;
 }
 
-
 .right-services{
-	background-color: green;
 	width: 400px;
 	float: left;
 }
@@ -184,25 +205,70 @@ figure{
 .pricing-table h3{
 	text-align: center;
 	margin: 0;
-	padding: 50px 0;
-	color: red;
+	padding: 50px 0 0;
 	font-size: 40px;
 }
 
+.pricing-table h3 + p{
+	text-align: center;
+}
+
 .price-table{
-	background-color: rgba(255,0,0,0.2);
-	box-shadow: 
-		0 0 10px #000,
-		-5px -5px 10px rgba(0,0,0,0.5) inset,
+	background-color: #fff;
+	box-shadow:
+		0 0 10px rgba(0,0,0,0.5)
+		/*-5px -5px 10px rgba(0,0,0,0.5) inset,
 		-5px -5px 10px red,
 		-10px -10px 10px green,
-		-15px -15px 10px orange
+		-15px -15px 10px orange*/
 		;
 	width: 270px;
-	padding: 15px;
+	padding: 30px;
 	float: left;
+	margin-top: 60px;
 	margin-right: 40px;
-	border-radius: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.price-table h4{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.price-table h2{
+	font-size: 50px;
+	margin: 0;
+}
+
+.price-table h2 sup{
+	font-size: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.price-table p{
+	margin: 0 0 30px;
+}
+
+.price-table table{
+	width: 100%;
+}
+
+.price-table td{
+	padding: 5px;
+}
+
+.price-table a{
+	display: block;
+	background-color: #26ABF6;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .price-table:last-of-type{
@@ -225,8 +291,8 @@ figure{
 
 
 .main-footer{
-	background-color: #418BB5;
-	margin-top: 50px;
+	background-color: #233042;
+	margin-top: 80px;
 }
 
 .main-footer h3{
@@ -234,23 +300,45 @@ figure{
 	font-size: 30px;
 	color: #fff;
 	margin: 0;
-	padding: 30px 0;
-	text-shadow: 
+	padding: 60px 0;
+	font-weight: 400;
+	/*text-shadow:
 		3px 3px 5px black,
 		6px 6px 5px red,
 		9px 9px 5px green,
-		12px 12px 5px violet;
+		12px 12px 5px violet;*/
+}
+
+.main-footer h3 span{
+	color: #26ABF6;
+	font-weight: 700;
+	font-size: 40px;
 }
 
 .bg-dark{
-	background-color: #284655;
+	background-color: #151D27;
+	padding: 30px 0;
 }
 
 .copyright{
 	float: left;
-	margin: 0;
+	margin: 10px 0 0;
+	color: #fff;
+	font-weight: 100;
 }
 
 .footer-nav{
 	float: right;
+	margin-top: 10px;
+}
+
+.footer-nav li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.footer-nav a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 100;
 }
