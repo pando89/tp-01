@@ -446,10 +446,15 @@ figure{
 			text-align: center;
 			display: block;
 		}
+		.main-nav{
+			float: none;	
+		}
+
 		.main-nav ul li{
 			float: none;
 			display: block;
 			text-align: center;
+			margin-top: 10px;
 		}
 		.banner-title, .banner-text{
 			display: none;
