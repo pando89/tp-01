@@ -279,7 +279,9 @@ figure{
 .price-table:last-of-type{
 	margin-right: 0;
 }
-
+.small-package{
+	color: blue;
+}
 
 .main-footer{
 	background-color: #233042;
