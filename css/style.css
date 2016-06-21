@@ -280,7 +280,16 @@ figure{
 	margin-right: 0;
 }
 .small-package{
-	color: blue;
+	color: #00abcf;
+}
+.normal-package{
+	color:#FFBB40;
+}
+.big-package{
+	color:#ec7f5a;
+}
+.best-package{
+	color: #9D0016;
 }
 
 .main-footer{
@@ -358,6 +367,9 @@ figure{
 .form-contact{
 	width: 	100%;
 }
+.form-contact input{
+	box-shadow: 
+}
 .contact-form-left, .contact-form-right{
 	float: 	left;	
 	width: 	50%;
@@ -372,18 +384,21 @@ figure{
 	padding-left: 10px;
 	margin-bottom: 10px;
 	margin-right: 3.33%;
+	box-shadow: 0px 1px 5px inset;
 }
 
-.contact-form-right input{
+.contact-form-right textarea{
 	width: 	100%;
 	height: 200px;
 	border: 1px solid #cbd0cb;
 	font-family: inherit;
 	font-size: 14px;
 	border-radius: 1px;
-	padding-left: 10px;
+	padding: 10px;
 	margin-bottom: 10px;
 	margin-left: 3.33%;
+	box-shadow: 0px 1px 5px inset;
+
 }
 .button-form{
 	text-align: center;
@@ -403,6 +418,7 @@ figure{
 	margin-top: 20px;
 	letter-spacing: 1.5px;
 	border-radius: 4px;
+	min-width: 70px;
 }
 
 
@@ -421,6 +437,24 @@ figure{
 		float: none;
 		width: 100%;
 	}
+	
+	.main-header{
+		float: none;
+	}
+	.main-nav{
+			float: none;	
+	}
+	.logo{
+		float: none;
+		text-align: left;
+		display: block;
+	}
+	.main-nav ul li{
+		float: none;
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
 	.pricing-table{
 		margin-top: 0;
 	}
@@ -438,46 +472,90 @@ figure{
 	.price-table table {
 		font-size: 12px;
 	}
+	.button-form{
+		text-align: center;
+		width: 100%;
+	}
+
+	.button-submit{
+		text-align: center;
+		font-size: 11px;
+	}
 }	
 @media (max-width:600px) {
-		.container, .main-header{
-			width: 95%
-		}
-		.logo{
-			float: none;
-			text-align: center;
-			display: block;
-		}
-		.main-nav{
-			float: none;	
-		}
+	.container, .main-header{
+		width: 95%
+	}
+	.logo{
+		float: none;
+		text-align: center;
+		display: block;
+	}
+	.main-nav{
+		float: none;	
+	}
 
-		.main-nav ul li{
-			float: none;
-			display: block;
-			text-align: center;
-			margin-top: 10px;
-		}
-		.banner-title, .banner-text{
-			display: none;
-		}
-		#banner{
-			background: none;
-		}
+	.main-nav ul li{
+		float: none;
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.banner-title, .banner-text{
+		display: none;
+	}
+	#banner{
+		background: none;
+	}
 
-		.title-services{
-			margin-bottom: 15px;
-		}
-		.left-services img{
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-		.left-services li{
-			position: relative;
-			text-align: left;
-			padding-left: 60px;
-		}	
+	.title-services{
+		margin-bottom: 15px;
+	}
+	.left-services img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.left-services li{
+		position: relative;
+		text-align: left;
+		padding-left: 60px;
+	}	
+	.button-form{
+	text-align: center;
+	width: 95%;
+	}
+	.button-submit{
+		text-align: center;
+		font-size: 10px;
+	}
+	.banner-contact{
+		display: none;
+	}
+	.contact-banner-title{
+		display: none;
+	}
+	.contact-banner-text{
+		display: none;
+	}
+	.title-services{
+		margin-top: 25px;
+	}
+	.contact-form-left{
+		display: block;
+		width: 95%;
+	}
+	.contact-form-left input{
+		margin-right: 0;
+	}
+	.contact-form-right{
+		display: block;
+		width: 95%;
+	}
+	.contact-form-right textarea{
+		margin-left: 0;
+	}
+
 }
 @media (max-width: 400px){
 	.container, .main-heder{
@@ -497,5 +575,39 @@ figure{
 	}
 	.price-table h4{
 		font-size: 11px;
+	}
+	.button-form{
+		text-align: center;
+		width: 95%;
+		}
+	.button-submit{
+		text-align: center;
+		font-size: 10px;
+	}
+	.banner-contact{
+		display: none;
+	}
+	.contact-banner-title{
+		display: none;
+	}
+	.contact-banner-text{
+		display: none;
+	}
+	.title-services{
+		margin-top: 25px;
+	}
+	.contact-form-left{
+		display: block;
+		width: 95%;
+	}
+	.contact-form-left input{
+		margin-right: 0;
+	}
+	.contact-form-right{
+		display: block;
+		width: 95%;
+	}
+	.contact-form-right textarea{
+		margin-left: 0;
 	}
 }
